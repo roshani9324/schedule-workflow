@@ -1,16 +1,13 @@
 name: schedule job
 
-on: 
+on:
   schedule:
-    -cron: "13 20 * * *"
+    - cron: "19 17 * * *"
 
 jobs:
   run-script:
-     run-on: ubantu-latest
+    runs-on: ubuntu-latest
 
-     steps:
-       - name: Print Message
-       run: echo "schedule workflow done"
-  
-  
-    
+    steps:
+      - name: Print Message
+        run: echo "schedule workflow done"

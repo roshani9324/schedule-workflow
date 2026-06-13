@@ -1,0 +1,16 @@
+name: schedule job
+
+on: 
+  schedule:
+    -cron: "13 20 * * *"
+
+jobs:
+  run-script:
+     run-on: ubantu-latest
+
+     steps:
+       - name: Print Message
+       run: echo "schedule workflow done"
+  
+  
+    
